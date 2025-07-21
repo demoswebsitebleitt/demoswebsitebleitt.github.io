@@ -1,0 +1,594 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    color:black;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+
+.cats{
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem  4rem;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+#fondovideo{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /*agregado*/
+}
+
+nav ul{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h1,h2,h3{
+    margin: 0;
+    font-weight: 700;
+}
+
+.cats-content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cats-text p{
+    margin: 0.2rem 0;
+    font-size: 0.8rem;
+}
+
+.cats-content h1{
+    font-size: 8rem;
+    line-height: 1;
+    text-align: right;
+}
+
+
+
+#marca{
+    font-size: 4rem;
+    margin-top: 24rem;
+
+}
+
+/*PORTAFOLIO*/
+
+.portafolio{
+    padding: 2rem 4rem ;
+    background-color: black;
+    color: #fff;
+
+}
+
+.portafolio-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #333;
+    flex-wrap: wrap;/*agregado*/
+}
+
+.portafolio-title h2{
+    font-size: 6rem;
+    text-align: center;
+    margin: 2.1rem 0;
+}
+
+.media-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.media-grid .grid-item{
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.media-grid .video-item{
+    outline: none;
+}
+
+.media-grid .image-item{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about{
+    background-color: #f0f0f0;
+    padding: 2rem 4rem 6rem;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.about-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;/*agregado*/
+}
+
+.about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+    position: relative;
+}
+
+.about-image img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text{
+    max-width: 300px;
+}
+
+.about-text p{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.section-title-bg{
+    position: absolute;
+    font-size: 12rem;
+    color: #000000;
+    opacity: 0.05;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.contact-link{
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+}
+
+.services{
+    background: url('fondoservicesdemo.jpg') no-repeat center center/cover;
+    padding: 2rem 4rem 8rem;
+    color: #ffffff;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.services::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.services-header, .services-content{
+    position: relative;
+    z-index: 2;
+}
+
+.services-header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #555;
+}
+
+.services-content{
+    margin-top: 15rem;
+}
+
+.services-list p{
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    max-width: 300px; /*agregado*/
+}
+
+.services-list a{
+    font-weight: 700;
+}
+
+.services .section-title-bg{
+    color: #ffffff;
+    opacity: 0.1;
+    font-size: 15rem;
+}
+
+/*agregado RESPONSIVE*/
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    /* Header */
+
+
+
+
+    nav {
+        flex-direction: column;
+        align-items: center; /* Centra el logo y el menú horizontalmente */
+        width: 100%; /* Asegura que la navegación ocupe todo el ancho para centrar bien */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-top: 1rem;
+        text-align: center; /* Centra el texto de los ítems del menú */
+        width: 100%; /* Asegura que la lista ocupe todo el ancho para centrar el texto */
+    }
+
+    nav ul li {
+        width: 100%; /* Asegura que cada ítem del menú ocupe todo el ancho */
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+        display: block; /* Hace que el enlace ocupe todo el ancho de su li */
+    }
+
+    .cats-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Centra todo el contenido de cats-content horizontalmente */
+        text-align: center; /* Centra el texto dentro de cats-text y h1#marca */
+        flex-grow: 1;
+        padding-top: 2rem; /* Añade un poco de espacio superior para separar del nav */
+    }
+
+    .cats-text {
+        margin-bottom: 1.5rem;
+        width: 100%; /* Asegura que el contenedor de texto ocupe todo el ancho para centrar su contenido */
+    }
+
+    .cats-text p {
+        font-size: 0.9rem;
+        text-align: center; /* Asegura que cada párrafo esté centrado */
+    }
+
+    .cats-content h1 {
+        font-size: 3rem;
+        line-height: 1.1;
+        text-align: center; /* Asegura que el título grande esté centrado */
+        margin-top: 1rem;
+        word-break: break-word;
+    }
+
+    #marca {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        text-align: center; /* Asegura que la marca esté centrada */
+    }
+
+
+/*PORTAFOLIO*/
+
+    .portafolio-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem; /* Espacio entre los elementos apilados del header */
+    }
+
+    .portafolio-title h2 {
+        font-size: 3.5rem; /* Reduce el tamaño del título del portafolio */
+    }
+
+    .media-grid {
+        flex-direction: column; /* Apila los elementos en una sola columna */
+        gap: 15px; /* Reduce el espacio entre los ítems de la cuadrícula */
+    }
+
+    .media-grid .grid-item {
+        width: 95%; /* Las imágenes y videos ocupan casi todo el ancho */
+        max-width: none; /* Elimina la restricción de ancho máximo */
+    }
+
+    .about-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .about-content {
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra verticalmente el contenido (si es necesario más espacio) */
+        margin-top: 3rem; /* Reduce el margen superior para acercar el contenido */
+        text-align: center; /* Centra el texto dentro de los contenedores */
+    }
+
+    .about-image {
+        margin-bottom: 1.5rem; /* Espacio entre la imagen y el texto */
+    }
+
+    .about-image img {
+        width: 150px; /* Reduce el tamaño de la imagen para móvil */
+        height: 150px;
+    }
+
+    .about-text {
+        max-width: 90%; /* Permite que el texto ocupe un ancho razonable */
+    }
+
+    .section-title-bg {
+        font-size: 6rem; /* Reduce el tamaño del título de fondo para móvil */
+    }
+
+    .contact-link {
+        margin-top: 1rem; /* Ajusta el margen del enlace */
+    }
+
+
+
+
+
+
+
+    /*ABOUT*/
+
+    .about-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .about-content {
+        flex-direction: column; /* Apila la imagen y el texto verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        justify-content: center; /* Centra verticalmente el contenido (si es necesario más espacio) */
+        margin-top: 3rem; /* Reduce el margen superior para acercar el contenido */
+        text-align: center; /* Centra el texto dentro de los contenedores */
+    }
+
+    .about-image {
+        margin-bottom: 1.5rem; /* Espacio entre la imagen y el texto */
+    }
+
+    .about-image img {
+        width: 150px; /* Reduce el tamaño de la imagen para móvil */
+        height: 150px;
+    }
+
+    .about-text {
+        max-width: 90%; /* Permite que el texto ocupe un ancho razonable */
+    }
+
+    .section-title-bg {
+        font-size: 6rem; /* Reduce el tamaño del título de fondo para móvil */
+    }
+
+    .contact-link {
+        margin-top: 1rem; /* Ajusta el margen del enlace */
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*SERVICES*/
+    .services {
+        padding: 1.5rem 1rem 4rem; /* Reduce el padding general */
+        min-height: auto; /* Ajusta la altura automáticamente */
+        height: auto; /* Asegura que la altura se ajuste al contenido */
+    }
+
+    .services-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+        margin-bottom: 2rem; /* Añade espacio entre el header y el contenido */
+        border-bottom: 1px solid #555; /* Mantiene la línea divisoria */
+        padding-bottom: 1rem; /* Mantiene el padding inferior */
+    }
+
+    .services-content {
+        margin-top: 2rem; /* Reduce el margen superior */
+        display: flex;
+        flex-direction: column; /* Apila los elementos */
+        align-items: center; /* Centra horizontalmente */
+        text-align: center; /* Centra el texto */
+    }
+
+    .services-list {
+        width: 90%; /* Limita el ancho del contenedor de la lista */
+        margin-bottom: 2rem; /* Espacio entre los bloques de servicio */
+    }
+
+    .services-list h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .services-list p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .services .section-title-bg {
+        font-size: 7rem; /* Reduce el tamaño del título de fondo */
+        top: auto; /* Permite ajustar la posición vertical */
+        bottom: 1rem; /* Lo coloca cerca de la parte inferior */
+    }
+
+
+
+}
+
+@media (max-width: 480px) {
+    /* Puedes añadir ajustes más finos aquí si los elementos necesitan ser aún más pequeños o distribuidos diferente */
+    .cats-content h1 {
+        font-size: 2.2rem;
+    }
+    #marca {
+        font-size: 1.65rem;
+        margin-top: 7rem;
+    }
+    nav ul li a {
+        font-size: 1rem;
+    }
+    .cats-text p {
+        font-size: 0.8rem;
+    }
+
+    .portafolio-title h2 {
+        font-size: 2.5rem; /* Título aún más pequeño */
+        margin: 1.5rem 0; /* Ajusta el margen si es necesario */
+    }
+
+    .media-grid {
+        gap: 10px; /* Reduce un poco más el espacio entre los ítems */
+    }
+
+    .media-grid .grid-item {
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+    }
+    
+
+
+
+
+
+    /*ABOUT*/
+
+    .about-content {
+        margin-top: 2rem; /* Reduce aún más el margen superior */
+        gap: 1rem; /* Reduce el espacio entre la imagen y el texto */
+    }
+
+    .about-image img {
+        width: 120px; /* Hace la imagen de perfil aún más pequeña */
+        height: 120px;
+    }
+
+    .about-text p {
+        font-size: 0.9rem; /* Reduce el tamaño del texto de descripción */
+    }
+
+    .section-title-bg {
+        font-size: 4rem; /* Reduce el tamaño del título de fondo para estas pantallas */
+    }
+
+
+
+
+
+
+
+
+    /*SERVICES*/
+    .services {
+        padding: 1rem 0.8rem 3rem; /* Reduce aún más el padding */
+    }
+
+    .services-header {
+        margin-bottom: 1.5rem; /* Reduce un poco el margen inferior del header */
+    }
+
+    .services-content {
+        margin-top: 1rem; /* Reduce el margen superior del contenido */
+    }
+
+    .services-list {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 1.5rem; /* Reduce el margen entre los bloques */
+    }
+
+    .services-list h3 {
+        font-size: 1.3rem; /* Reduce el tamaño del encabezado */
+    }
+
+    .services-list p {
+        font-size: 0.9rem; /* Reduce el tamaño del párrafo */
+    }
+
+    .services .section-title-bg {
+        font-size: 5rem; /* Reduce aún más el título de fondo */
+        bottom: 0.5rem; /* Ajusta la posición inferior */
+    }
+}
+
+
+
