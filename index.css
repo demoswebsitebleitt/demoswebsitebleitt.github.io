@@ -824,10 +824,10 @@ form button:disabled {
 
 
 /**FOOTER DEMO**/
-footer{
+footer {
     background-color: #000000;
     color: #ffffff;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 4rem; 
 }
 
 .footer-content {
@@ -835,5 +835,33 @@ footer{
     justify-content: space-between;
     align-items: center;
     font-size: 0.8rem;
+    flex-wrap: wrap; 
 }
 
+
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem 2rem; /* Reduce padding on smaller screens */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items horizontally */
+        text-align: center; /* Center text within each item */
+    }
+
+    .footer-content span {
+        margin-bottom: 0.5rem; /* Add some space between stacked items */
+    }
+
+    .footer-content span:last-child {
+        margin-bottom: 0; /* No margin after the last item */
+    }
+}
+
+/* Optional: Media query for even smaller screens if needed */
+@media (max-width: 480px) {
+    footer {
+        padding: 1rem 1rem; /* Even more reduced padding for very small screens */
+    }
+}
