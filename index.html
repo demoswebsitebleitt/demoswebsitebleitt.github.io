@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
 
+    <!--CONTACTO DEMO LIB-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdpdosrAAAAANd-sXhbjsgs7eWkCybCOHTtOOH0"></script>
+
+
 </head>
 <body>
 
@@ -100,6 +105,62 @@
         </div>
 
     </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-header">
+            <span><a href="#">ARTURIUS</a></span>
+        </div>
+        <h2>CONTACTO</h2>
+        <p class="contact-subtitle">COLOCA TUS DATOS</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="tel" id="telefono" name="telefono" placeholder="+51 000 000 000" pattern="[0-9+ ]{9,}" title="Por favor, introduce un número de teléfono válido (solo números y +)" required>
+            </div>
+            <button type="submit">ENVIAR</button>
+            <div id="formMessage"></div>
+        </form>
+
+        <div class="contact-info">
+            <h3>Contacto info</h3>
+            <p>correo@gmail.com</p>
+            <p>+51 900 000 000</p>
+            <p>LIMA, PERU</p>
+        </div>
+
+        <div class="social-icons-bottom">
+            <a href="https://api.whatsapp.com/send?phone=51944532876&text=Hola%20quiero%20informacion%20de%20los%20servicios" target="_blank" class="whatsapp-icon">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <div class="other-social-icons">
+                <a href="https://www.instagram.com/TU_USUARIO_INSTAGRAM" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@TU_USUARIO_TIKTOK" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://www.facebook.com/TU_USUARIO_FACEBOOK" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <span><a href="#">ARTURIUSDEMO</a></span>
+            <span>desarrollador: millarobles0080905@gmail.com</span>
+            <span>© ARTURIUS 2025</span>
+        </div>
+    </footer>
+
+<script src="/static/js/script.js"></script>
+
+
 
 
 </body>
