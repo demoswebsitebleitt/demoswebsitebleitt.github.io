@@ -1,0 +1,135 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: url('fondo.jpg') no-repeat center center fixed;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    /**background-size: cover;**/
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    z-index: 9999;
+}
+
+.top-bar .home-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.top-bar .right a {
+    color: #fff;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s;
+    padding-right: 3rem;
+}
+
+.top-bar .right a:hover {
+    color: #1db954; 
+}
+
+.top-bar .left a{
+    padding-left: 3rem;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 100px 20px 50px; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+.gallery {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.gallery-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.video-container {
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    transition: transform 0.4s ease;
+}
+
+.video-container:hover video {
+    transform: scale(1.03);
+}
+
+.caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 3rem;
+}
+
+.contact-button {
+    background-color: transparent;
+    color: #fff;
+    padding: 15px 40px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    display: inline-block;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    opacity: 50%;
+}
+
+
+.footer-simple {
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+    padding: 1.5rem 4rem; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
